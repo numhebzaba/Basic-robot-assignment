@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-09-27T23:30:29.581675" rpa="false" schemaversion="5">
+<suite id="s1" name="Assingment" source="C:\Users\numpt\Desktop\robot\Assingment">
+<suite id="s1-s1" name="Assingment IF" source="C:\Users\numpt\Desktop\robot\Assingment\Assingment_IF.robot">
+<test id="s1-s1-t1" name="Tc-001 Score Is More Than Or Equal 90" line="4">
+<kw name="Give Grade">
+<if>
+<branch type="IF" condition="${score} &gt;= 90">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>A</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-27T23:30:29.621230" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:29.620203" elapsed="0.001027"/>
+</branch>
+<branch type="ELSE IF" condition="${score} &gt;= 80">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>B</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:29.621230" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:29.621230" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${score} &gt;= 70">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>C</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:29.621230" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:29.621230" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${score} &gt;= 60">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>D</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:29.621230" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:29.621230" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>F</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:29.621230" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:29.621230" elapsed="0.001132"/>
+</branch>
+<status status="PASS" start="2024-09-27T23:30:29.620203" elapsed="0.002159"/>
+</if>
+<arg>99</arg>
+<status status="PASS" start="2024-09-27T23:30:29.620203" elapsed="0.002159"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:29.619188" elapsed="0.003174"/>
+</test>
+<test id="s1-s1-t2" name="Tc-002 Score Is More Than Or Equal 80" line="6">
+<kw name="Give Grade">
+<if>
+<branch type="IF" condition="${score} &gt;= 90">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>A</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:29.623461" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:29.623461" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${score} &gt;= 80">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>B</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-27T23:30:29.624957" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:29.623461" elapsed="0.001496"/>
+</branch>
+<branch type="ELSE IF" condition="${score} &gt;= 70">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>C</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:29.624957" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:29.624957" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${score} &gt;= 60">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>D</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:29.624957" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:29.624957" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>F</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:29.624957" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:29.624957" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-09-27T23:30:29.623461" elapsed="0.001496"/>
+</if>
+<arg>80</arg>
+<status status="PASS" start="2024-09-27T23:30:29.623461" elapsed="0.002519"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:29.622362" elapsed="0.003618"/>
+</test>
+<test id="s1-s1-t3" name="Tc-003 Score Is More Than Or Equal 70" line="8">
+<kw name="Give Grade">
+<if>
+<branch type="IF" condition="${score} &gt;= 90">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>A</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:29.625980" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:29.625980" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${score} &gt;= 80">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>B</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:29.627003" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:29.627003" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${score} &gt;= 70">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>C</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-27T23:30:29.627003" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:29.627003" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${score} &gt;= 60">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>D</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:29.627003" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:29.627003" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>F</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:29.627003" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:29.627003" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-09-27T23:30:29.625980" elapsed="0.001023"/>
+</if>
+<arg>75</arg>
+<status status="PASS" start="2024-09-27T23:30:29.625980" elapsed="0.002052"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:29.625980" elapsed="0.002052"/>
+</test>
+<test id="s1-s1-t4" name="Tc-004 Score Is More Than Or Equal 60" line="10">
+<kw name="Give Grade">
+<if>
+<branch type="IF" condition="${score} &gt;= 90">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>A</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:29.628032" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:29.628032" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${score} &gt;= 80">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>B</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:29.629033" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:29.628032" elapsed="0.001001"/>
+</branch>
+<branch type="ELSE IF" condition="${score} &gt;= 70">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>C</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:29.629033" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:29.629033" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${score} &gt;= 60">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>D</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-27T23:30:29.629033" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:29.629033" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>F</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:29.629033" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:29.629033" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-09-27T23:30:29.628032" elapsed="0.002001"/>
+</if>
+<arg>60.5</arg>
+<status status="PASS" start="2024-09-27T23:30:29.628032" elapsed="0.002001"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:29.628032" elapsed="0.002001"/>
+</test>
+<test id="s1-s1-t5" name="Tc-005 Score Is Lesser Than 60" line="12">
+<kw name="Give Grade">
+<if>
+<branch type="IF" condition="${score} &gt;= 90">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>A</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:29.631034" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:29.630033" elapsed="0.001001"/>
+</branch>
+<branch type="ELSE IF" condition="${score} &gt;= 80">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>B</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:29.631034" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:29.631034" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${score} &gt;= 70">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>C</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:29.631034" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:29.631034" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${score} &gt;= 60">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>D</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:29.631034" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:29.631034" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>F</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-27T23:30:29.632033" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:29.631034" elapsed="0.000999"/>
+</branch>
+<status status="PASS" start="2024-09-27T23:30:29.630033" elapsed="0.002000"/>
+</if>
+<arg>15</arg>
+<status status="PASS" start="2024-09-27T23:30:29.630033" elapsed="0.002000"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:29.630033" elapsed="0.002000"/>
+</test>
+<status status="PASS" start="2024-09-27T23:30:29.618060" elapsed="0.013973"/>
+</suite>
+<status status="PASS" start="2024-09-27T23:30:29.605383" elapsed="0.027651"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Assingment">Assingment</stat>
+<stat pass="5" fail="0" skip="0" id="s1-s1" name="Assingment IF">Assingment.Assingment IF</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

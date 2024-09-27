@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-09-27T23:30:25.313308" rpa="false" schemaversion="5">
+<suite id="s1" name="Assingment" source="C:\Users\numpt\Desktop\robot\Assingment">
+<suite id="s1-s1" name="Assignment15" source="C:\Users\numpt\Desktop\robot\Assingment\Assignment15.robot">
+<test id="s1-s1-t1" name="TC-001 Error Handling Example" line="5">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-27T23:30:25.515704" level="INFO">Clicking element 'invalid_locator'.</msg>
+<msg time="2024-09-27T23:30:25.515704" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-09-27T23:30:25.515704" level="FAIL">No browser is open.</msg>
+<arg>invalid_locator</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-09-27T23:30:25.515704" elapsed="0.002430">No browser is open.</status>
+</kw>
+<msg time="2024-09-27T23:30:25.518134" level="INFO">${status} = False</msg>
+<var>${status}</var>
+<arg>Click Element</arg>
+<arg>invalid_locator</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-09-27T23:30:25.514703" elapsed="0.003431"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:25.519133" level="INFO">Status: False</msg>
+<arg>Status: ${status}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:25.518134" elapsed="0.000999"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-27T23:30:25.519133" level="INFO">Typing text 'value' into text field 'invalid_locator'.</msg>
+<msg time="2024-09-27T23:30:25.519133" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-09-27T23:30:25.520218" level="FAIL">No browser is open.</msg>
+<arg>invalid_locator</arg>
+<arg>value</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-09-27T23:30:25.519133" elapsed="0.001085">No browser is open.</status>
+</kw>
+<arg>Input Text</arg>
+<arg>invalid_locator</arg>
+<arg>value</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-09-27T23:30:25.519133" elapsed="0.002084"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:25.521217" level="INFO">Ignored the error and continued</msg>
+<arg>Ignored the error and continued</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:25.521217" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:25.513694" elapsed="0.007523"/>
+</test>
+<status status="PASS" start="2024-09-27T23:30:25.349890" elapsed="0.172397"/>
+</suite>
+<status status="PASS" start="2024-09-27T23:30:25.335193" elapsed="0.187094"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assingment">Assingment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assignment15">Assingment.Assignment15</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-09-27T23:30:23.027613" rpa="false" schemaversion="5">
+<suite id="s1" name="Assingment" source="C:\Users\numpt\Desktop\robot\Assingment">
+<suite id="s1-s1" name="Assignment10" source="C:\Users\numpt\Desktop\robot\Assingment\Assignment10.robot">
+<test id="s1-s1-t1" name="TC-001 Get Fruit List and Log Fruit" line="8">
+<kw name="Create Fruit List">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-27T23:30:23.241648" level="INFO">@{fruits} = [ apple | banana | cherry ]</msg>
+<var>@{fruits}</var>
+<arg>apple</arg>
+<arg>banana</arg>
+<arg>cherry</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-27T23:30:23.241648" elapsed="0.000000"/>
+</kw>
+<kw name="Return From Keyword" owner="BuiltIn">
+<msg time="2024-09-27T23:30:23.241648" level="INFO">Returning from the enclosing user keyword.</msg>
+<arg>@{fruits}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<status status="PASS" start="2024-09-27T23:30:23.241648" elapsed="0.000000"/>
+</kw>
+<msg time="2024-09-27T23:30:23.241648" level="INFO">@{my_fruits} = [ apple | banana | cherry ]</msg>
+<var>@{my_fruits}</var>
+<status status="PASS" start="2024-09-27T23:30:23.240644" elapsed="0.001004"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:23.242658" level="INFO">apple</msg>
+<arg>${my_fruits[0]}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:23.241648" elapsed="0.001010"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:23.240140" elapsed="0.002518"/>
+</test>
+<status status="PASS" start="2024-09-27T23:30:23.067202" elapsed="0.175456"/>
+</suite>
+<status status="PASS" start="2024-09-27T23:30:23.050988" elapsed="0.192677"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assingment">Assingment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assignment10">Assingment.Assignment10</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

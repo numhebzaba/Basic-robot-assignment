@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-09-27T23:30:21.501050" rpa="false" schemaversion="5">
+<suite id="s1" name="Assingment" source="C:\Users\numpt\Desktop\robot\Assingment">
+<suite id="s1-s1" name="Assignment03" source="C:\Users\numpt\Desktop\robot\Assingment\Assignment03.robot">
+<test id="s1-s1-t1" name="TC-001 Print User Info From Input Dictionary" line="9">
+<kw name="Print User Info">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:21.571552" level="INFO">Name: Num</msg>
+<arg>Name: ${user_info["name"]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:21.570531" elapsed="0.001021"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:21.572560" level="INFO">Age: 23</msg>
+<arg>Age: ${user_info["age"]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:21.571552" elapsed="0.001008"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:21.573561" level="INFO">City: Samut sakhon</msg>
+<arg>City: ${user_info["city"]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:21.573561" elapsed="0.001000"/>
+</kw>
+<arg>name=Num</arg>
+<arg>age=23</arg>
+<arg>city=Samut sakhon</arg>
+<status status="PASS" start="2024-09-27T23:30:21.570024" elapsed="0.004537"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:21.568451" elapsed="0.006110"/>
+</test>
+<status status="PASS" start="2024-09-27T23:30:21.564938" elapsed="0.010622"/>
+</suite>
+<status status="PASS" start="2024-09-27T23:30:21.540834" elapsed="0.036127"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assingment">Assingment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assignment03">Assingment.Assignment03</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

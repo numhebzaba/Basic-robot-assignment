@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-09-27T23:30:21.520267" rpa="false" schemaversion="5">
+<suite id="s1" name="Assingment" source="C:\Users\numpt\Desktop\robot\Assingment">
+<suite id="s1-s1" name="Assignment04" source="C:\Users\numpt\Desktop\robot\Assingment\Assignment04.robot">
+<test id="s1-s1-t1" name="TC-001 Greet User by Default" line="8">
+<kw name=" Greet User">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:21.590081" level="INFO">"Hello, Guest"</msg>
+<arg>"Hello, ${name}"</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:21.589066" elapsed="0.001015"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:21.587897" elapsed="0.002184"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:21.587897" elapsed="0.002184"/>
+</test>
+<test id="s1-s1-t2" name="TC-002 Greet User by Input" line="10">
+<kw name=" Greet User">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:21.592618" level="INFO">"Hello, John"</msg>
+<arg>"Hello, ${name}"</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:21.591591" elapsed="0.001027"/>
+</kw>
+<arg>John</arg>
+<status status="PASS" start="2024-09-27T23:30:21.591591" elapsed="0.001027"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:21.590081" elapsed="0.002537"/>
+</test>
+<status status="PASS" start="2024-09-27T23:30:21.584573" elapsed="0.008045"/>
+</suite>
+<status status="PASS" start="2024-09-27T23:30:21.561935" elapsed="0.031728"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Assingment">Assingment</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Assignment04">Assingment.Assignment04</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

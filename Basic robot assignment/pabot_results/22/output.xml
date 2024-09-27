@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-09-27T23:30:28.069315" rpa="false" schemaversion="5">
+<suite id="s1" name="Assingment" source="C:\Users\numpt\Desktop\robot\Assingment">
+<suite id="s1-s1" name="Assignment23" source="C:\Users\numpt\Desktop\robot\Assingment\Assignment23.robot">
+<test id="s1-s1-t1" name="TC-001 Parallel Test 1" line="5">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:28.336059" level="INFO">Running Test 1</msg>
+<arg>Running Test 1</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.336059" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:28.335556" elapsed="0.001506"/>
+</test>
+<test id="s1-s1-t2" name="TC-002 Parallel Test 2" line="7">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:28.338114" level="INFO">Running Test 2</msg>
+<arg>Running Test 2</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.338114" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:28.337062" elapsed="0.001052"/>
+</test>
+<test id="s1-s1-t3" name="TC-003 Parallel Test 3" line="9">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:28.339124" level="INFO">Running Test 3</msg>
+<arg>Running Test 3</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.339124" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:28.338114" elapsed="0.001010"/>
+</test>
+<status status="PASS" start="2024-09-27T23:30:28.107601" elapsed="0.231523"/>
+</suite>
+<status status="PASS" start="2024-09-27T23:30:28.093777" elapsed="0.246360"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Assingment">Assingment</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="Assignment23">Assingment.Assignment23</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

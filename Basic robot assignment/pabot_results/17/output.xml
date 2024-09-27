@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-09-27T23:30:26.127313" rpa="false" schemaversion="5">
+<suite id="s1" name="Assingment" source="C:\Users\numpt\Desktop\robot\Assingment">
+<suite id="s1-s1" name="Assignment18" source="C:\Users\numpt\Desktop\robot\Assingment\Assignment18.robot">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2024-09-27T23:30:26.339977" level="INFO">Suite is starting</msg>
+<arg>Suite is starting</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:26.339977" elapsed="0.000000"/>
+</kw>
+<test id="s1-s1-t1" name="TC-001" line="6">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:26.340977" level="INFO">Running Test 1</msg>
+<arg>Running Test 1</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:26.340977" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:26.339977" elapsed="0.002000"/>
+</test>
+<test id="s1-s1-t2" name="TC-002" line="8">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:26.342977" level="INFO">Running Test 2</msg>
+<arg>Running Test 2</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:26.342977" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:26.342977" elapsed="0.001162"/>
+</test>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2024-09-27T23:30:26.344139" level="INFO">Suite is ending</msg>
+<arg>Suite is ending</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:26.344139" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:26.167438" elapsed="0.176701"/>
+</suite>
+<status status="PASS" start="2024-09-27T23:30:26.152112" elapsed="0.193033"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Assingment">Assingment</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Assignment18">Assingment.Assignment18</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

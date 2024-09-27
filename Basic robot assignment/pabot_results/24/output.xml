@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-09-27T23:30:28.948830" rpa="false" schemaversion="5">
+<suite id="s1" name="Assingment" source="C:\Users\numpt\Desktop\robot\Assingment">
+<suite id="s1-s1" name="Assingment For Loop" source="C:\Users\numpt\Desktop\robot\Assingment\Assingment_For_Loop.robot">
+<test id="s1-s1-t1" name="Tc-001 Loop Hero Name" line="6">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-27T23:30:28.984661" level="INFO">${i} = 0</msg>
+<var>${i}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.984661" elapsed="0.001019"/>
+</kw>
+<for flavor="IN">
+<iter>
+<if>
+<branch type="IF" condition="${i}%2 == 0">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.985680" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:28.985680" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-09-27T23:30:28.985680" elapsed="0.001087"/>
+</if>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-27T23:30:28.986767" level="INFO">${i} = 1</msg>
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.986767" elapsed="0.000000"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${index}"=="blackwidow"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.986767" elapsed="0.000000"/>
+</kw>
+<var name="${index}">ironman</var>
+<status status="PASS" start="2024-09-27T23:30:28.985680" elapsed="0.002098"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${i}%2 == 0">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:28.987778" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:28.987778" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-09-27T23:30:28.987778" elapsed="0.000000"/>
+</if>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-27T23:30:28.987778" level="INFO">${i} = 2</msg>
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.987778" elapsed="0.000000"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${index}"=="blackwidow"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.988793" elapsed="0.000000"/>
+</kw>
+<var name="${index}">batman</var>
+<status status="PASS" start="2024-09-27T23:30:28.987778" elapsed="0.001015"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${i}%2 == 0">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.988793" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:28.988793" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-09-27T23:30:28.988793" elapsed="0.000000"/>
+</if>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-27T23:30:28.989936" level="INFO">${i} = 3</msg>
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.988793" elapsed="0.001143"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${index}"=="blackwidow"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.989936" elapsed="0.000000"/>
+</kw>
+<var name="${index}">captain</var>
+<status status="PASS" start="2024-09-27T23:30:28.988793" elapsed="0.001143"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${i}%2 == 0">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:28.989936" elapsed="0.001014"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:28.989936" elapsed="0.001014"/>
+</branch>
+<status status="PASS" start="2024-09-27T23:30:28.989936" elapsed="0.001014"/>
+</if>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-27T23:30:28.990950" level="INFO">${i} = 4</msg>
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.990950" elapsed="0.000000"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${index}"=="blackwidow"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.990950" elapsed="0.000000"/>
+</kw>
+<var name="${index}">superman</var>
+<status status="PASS" start="2024-09-27T23:30:28.989936" elapsed="0.001014"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${i}%2 == 0">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.992003" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:28.990950" elapsed="0.001053"/>
+</branch>
+<status status="PASS" start="2024-09-27T23:30:28.990950" elapsed="0.001053"/>
+</if>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-27T23:30:28.992003" level="INFO">${i} = 5</msg>
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.992003" elapsed="0.000000"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${index}"=="blackwidow"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.992003" elapsed="0.000000"/>
+</kw>
+<var name="${index}">hulk</var>
+<status status="PASS" start="2024-09-27T23:30:28.990950" elapsed="0.002067"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${i}%2 == 0">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:28.993017" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:28.993017" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-09-27T23:30:28.993017" elapsed="0.000000"/>
+</if>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-27T23:30:28.993017" level="INFO">${i} = 6</msg>
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.993017" elapsed="0.000000"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${index}"=="blackwidow"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.993017" elapsed="0.000994"/>
+</kw>
+<var name="${index}">shazam</var>
+<status status="PASS" start="2024-09-27T23:30:28.993017" elapsed="0.000994"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${i}%2 == 0">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.994532" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:28.994011" elapsed="0.000521"/>
+</branch>
+<status status="PASS" start="2024-09-27T23:30:28.994011" elapsed="0.000521"/>
+</if>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-27T23:30:28.994532" level="INFO">${i} = 7</msg>
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.994532" elapsed="0.000000"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${index}"=="blackwidow"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.994532" elapsed="0.000000"/>
+</kw>
+<var name="${index}">thor</var>
+<status status="PASS" start="2024-09-27T23:30:28.994011" elapsed="0.000521"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${i}%2 == 0">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:28.995572" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T23:30:28.995572" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-09-27T23:30:28.995572" elapsed="0.000000"/>
+</if>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-27T23:30:28.996674" level="INFO">${i} = 8</msg>
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.995572" elapsed="0.001102"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${index}"=="blackwidow"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.996674" elapsed="0.000000"/>
+</kw>
+<var name="${index}">flash</var>
+<status status="PASS" start="2024-09-27T23:30:28.995572" elapsed="0.001102"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${i}%2 == 0">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.997694" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:28.996674" elapsed="0.001020"/>
+</branch>
+<status status="PASS" start="2024-09-27T23:30:28.996674" elapsed="0.001020"/>
+</if>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-27T23:30:28.997694" level="INFO">${i} = 9</msg>
+<var>${i}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.997694" elapsed="0.000000"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2024-09-27T23:30:28.998707" level="INFO">Exiting for loop altogether.</msg>
+<arg>"${index}"=="blackwidow"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T23:30:28.997694" elapsed="0.001013"/>
+</kw>
+<var name="${index}">blackwidow</var>
+<status status="PASS" start="2024-09-27T23:30:28.996674" elapsed="0.002033"/>
+</iter>
+<var>${index}</var>
+<value>@{hero}</value>
+<status status="PASS" start="2024-09-27T23:30:28.985680" elapsed="0.013027"/>
+</for>
+<status status="PASS" start="2024-09-27T23:30:28.984661" elapsed="0.014046"/>
+</test>
+<status status="PASS" start="2024-09-27T23:30:28.982338" elapsed="0.017376"/>
+</suite>
+<status status="PASS" start="2024-09-27T23:30:28.970263" elapsed="0.029451"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assingment">Assingment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assingment For Loop">Assingment.Assingment For Loop</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,19 @@
+==============================================================================
+Assingment                                                                    
+==============================================================================
+Assingment.Assignment19                                                       
+==============================================================================
+TC-001 Test Case With Teardown                                        Running the test
+Running the keyword
+Keyword Teardown is running
+Test Case Teardown is running
+| PASS |
+------------------------------------------------------------------------------
+Suite Teardown is running
+Assingment.Assignment19                                               | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Assingment                                                            | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\numpt\Desktop\robot\Assingment\pabot_results\18\output.xml

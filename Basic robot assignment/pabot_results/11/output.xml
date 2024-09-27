@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-09-27T23:30:24.143822" rpa="false" schemaversion="5">
+<suite id="s1" name="Assingment" source="C:\Users\numpt\Desktop\robot\Assingment">
+<suite id="s1-s1" name="Assignment12" source="C:\Users\numpt\Desktop\robot\Assingment\Assignment12.robot">
+<test id="s1-s1-t1" name="TC-001 Age Verification" line="5">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-27T23:30:24.413717" level="INFO">${age} = 20</msg>
+<var>${age}</var>
+<arg>20</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-27T23:30:24.413717" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:24.415718" level="INFO">You are an adult</msg>
+<arg>You are an adult</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:24.414701" elapsed="0.001017"/>
+</kw>
+<arg>${age} &gt; 18</arg>
+<arg>Log</arg>
+<arg>You are an adult</arg>
+<arg>console=True</arg>
+<arg>ELSE IF</arg>
+<arg>${age} == 18</arg>
+<arg>Log</arg>
+<arg>You just became an adult</arg>
+<arg>console=True</arg>
+<arg>ELSE</arg>
+<arg>Log</arg>
+<arg>You are underage</arg>
+<arg>console=True</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T23:30:24.414701" elapsed="0.001017"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:24.412712" elapsed="0.003006"/>
+</test>
+<status status="PASS" start="2024-09-27T23:30:24.192708" elapsed="0.224002"/>
+</suite>
+<status status="PASS" start="2024-09-27T23:30:24.173010" elapsed="0.243700"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assingment">Assingment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assignment12">Assingment.Assignment12</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

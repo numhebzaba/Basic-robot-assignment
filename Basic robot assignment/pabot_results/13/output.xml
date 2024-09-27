@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-09-27T23:30:24.142822" rpa="false" schemaversion="5">
+<suite id="s1" name="Assingment" source="C:\Users\numpt\Desktop\robot\Assingment">
+<suite id="s1-s1" name="Assignment14" source="C:\Users\numpt\Desktop\robot\Assingment\Assignment14.robot">
+<test id="s1-s1-t1" name="TC-001 Loop Control Example" line="5">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${number} == 5</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T23:30:24.408714" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${number} == 3</arg>
+<arg>Continue For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T23:30:24.408714" elapsed="0.000986"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:24.409700" level="INFO">1</msg>
+<arg>${number}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:24.409700" elapsed="0.000000"/>
+</kw>
+<var name="${number}">1</var>
+<status status="PASS" start="2024-09-27T23:30:24.407657" elapsed="0.002043"/>
+</iter>
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${number} == 5</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T23:30:24.410707" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${number} == 3</arg>
+<arg>Continue For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T23:30:24.410707" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:24.411710" level="INFO">2</msg>
+<arg>${number}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:24.410707" elapsed="0.001003"/>
+</kw>
+<var name="${number}">2</var>
+<status status="PASS" start="2024-09-27T23:30:24.409700" elapsed="0.002010"/>
+</iter>
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${number} == 5</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T23:30:24.411710" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Continue For Loop" owner="BuiltIn">
+<msg time="2024-09-27T23:30:24.412712" level="INFO">Continuing for loop from the next iteration.</msg>
+<doc>Skips the current FOR loop iteration and continues from the next.</doc>
+<status status="PASS" start="2024-09-27T23:30:24.412712" elapsed="0.000000"/>
+</kw>
+<arg>${number} == 3</arg>
+<arg>Continue For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T23:30:24.411710" elapsed="0.001002"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${number}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:24.412712" elapsed="0.000000"/>
+</kw>
+<var name="${number}">3</var>
+<status status="PASS" start="2024-09-27T23:30:24.411710" elapsed="0.001002"/>
+</iter>
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${number} == 5</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T23:30:24.412712" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${number} == 3</arg>
+<arg>Continue For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T23:30:24.412712" elapsed="0.001005"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:24.413717" level="INFO">4</msg>
+<arg>${number}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:24.413717" elapsed="0.000000"/>
+</kw>
+<var name="${number}">4</var>
+<status status="PASS" start="2024-09-27T23:30:24.412712" elapsed="0.001005"/>
+</iter>
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Exit For Loop" owner="BuiltIn">
+<msg time="2024-09-27T23:30:24.414701" level="INFO">Exiting for loop altogether.</msg>
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="PASS" start="2024-09-27T23:30:24.414701" elapsed="0.000000"/>
+</kw>
+<arg>${number} == 5</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T23:30:24.413717" elapsed="0.000984"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${number} == 3</arg>
+<arg>Continue For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:24.414701" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${number}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-09-27T23:30:24.414701" elapsed="0.000000"/>
+</kw>
+<var name="${number}">5</var>
+<status status="PASS" start="2024-09-27T23:30:24.413717" elapsed="0.000984"/>
+</iter>
+<var>${number}</var>
+<value>1</value>
+<value>10</value>
+<status status="PASS" start="2024-09-27T23:30:24.407657" elapsed="0.007044"/>
+</for>
+<status status="PASS" start="2024-09-27T23:30:24.406667" elapsed="0.008034"/>
+</test>
+<status status="PASS" start="2024-09-27T23:30:24.195282" elapsed="0.220436"/>
+</suite>
+<status status="PASS" start="2024-09-27T23:30:24.174377" elapsed="0.241341"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assingment">Assingment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assignment14">Assingment.Assignment14</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

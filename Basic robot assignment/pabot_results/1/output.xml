@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-09-27T23:30:21.495255" rpa="false" schemaversion="5">
+<suite id="s1" name="Assingment" source="C:\Users\numpt\Desktop\robot\Assingment">
+<suite id="s1-s1" name="Assignment02" source="C:\Users\numpt\Desktop\robot\Assingment\Assignment02.robot">
+<test id="s1-s1-t1" name="TC-001 Print Fruits From Input List" line="9">
+<kw name=" Print Fruits">
+<for flavor="IN">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:21.558400" level="INFO">apple</msg>
+<arg>${fruits}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:21.557400" elapsed="0.001000"/>
+</kw>
+<var name="${fruits}">apple</var>
+<status status="PASS" start="2024-09-27T23:30:21.557400" elapsed="0.001000"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:21.559401" level="INFO">banana</msg>
+<arg>${fruits}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:21.558400" elapsed="0.001001"/>
+</kw>
+<var name="${fruits}">banana</var>
+<status status="PASS" start="2024-09-27T23:30:21.558400" elapsed="0.001001"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:21.559909" level="INFO">cherry.</msg>
+<arg>${fruits}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:21.559909" elapsed="0.000000"/>
+</kw>
+<var name="${fruits}">cherry.</var>
+<status status="PASS" start="2024-09-27T23:30:21.559909" elapsed="0.001019"/>
+</iter>
+<var>${fruits}</var>
+<value>@{fruits}</value>
+<status status="PASS" start="2024-09-27T23:30:21.556401" elapsed="0.004527"/>
+</for>
+<arg>apple</arg>
+<arg>banana</arg>
+<arg>cherry.</arg>
+<status status="PASS" start="2024-09-27T23:30:21.555400" elapsed="0.005528"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:21.554400" elapsed="0.006528"/>
+</test>
+<status status="PASS" start="2024-09-27T23:30:21.550884" elapsed="0.011051"/>
+</suite>
+<status status="PASS" start="2024-09-27T23:30:21.527776" elapsed="0.035158"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assingment">Assingment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assignment02">Assingment.Assignment02</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

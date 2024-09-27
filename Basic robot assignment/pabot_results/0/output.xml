@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-09-27T23:30:21.505144" rpa="false" schemaversion="5">
+<suite id="s1" name="Assingment" source="C:\Users\numpt\Desktop\robot\Assingment">
+<suite id="s1-s1" name="Assignment01" source="C:\Users\numpt\Desktop\robot\Assingment\Assignment01.robot">
+<test id="s1-s1-t1" name="TC-001 Age is 16" line="9">
+<kw name="Validate Age">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"Not eligible for voting"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-27T23:30:21.575560" elapsed="0.000000"/>
+</kw>
+<arg>${age}&gt;18</arg>
+<arg>Log To Console</arg>
+<arg>"Eligible for voting"</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>"Not eligible for voting"</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T23:30:21.574561" elapsed="0.000999"/>
+</kw>
+<arg>16</arg>
+<status status="PASS" start="2024-09-27T23:30:21.573561" elapsed="0.001999"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:21.572560" elapsed="0.004401"/>
+</test>
+<test id="s1-s1-t2" name="TC-002 Age is 20" line="11">
+<kw name="Validate Age">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"Eligible for voting"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-27T23:30:21.578968" elapsed="0.001000"/>
+</kw>
+<arg>${age}&gt;18</arg>
+<arg>Log To Console</arg>
+<arg>"Eligible for voting"</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>"Not eligible for voting"</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T23:30:21.577966" elapsed="0.002002"/>
+</kw>
+<arg>20</arg>
+<status status="PASS" start="2024-09-27T23:30:21.577966" elapsed="0.002002"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:21.576961" elapsed="0.003007"/>
+</test>
+<status status="PASS" start="2024-09-27T23:30:21.568451" elapsed="0.012517"/>
+</suite>
+<status status="PASS" start="2024-09-27T23:30:21.544346" elapsed="0.037131"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Assingment">Assingment</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Assignment01">Assingment.Assignment01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-09-27T23:30:26.181345" rpa="false" schemaversion="5">
+<suite id="s1" name="Assingment" source="C:\Users\numpt\Desktop\robot\Assingment">
+<suite id="s1-s1" name="Assignment19" source="C:\Users\numpt\Desktop\robot\Assingment\Assignment19.robot">
+<test id="s1-s1-t1" name="TC-001 Test Case With Teardown" line="6">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:26.386324" level="INFO">Running the test</msg>
+<arg>Running the test</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:26.385041" elapsed="0.001283"/>
+</kw>
+<kw name="Keyword With Teardown">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:26.387329" level="INFO">Running the keyword</msg>
+<arg>Running the keyword</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:26.386324" elapsed="0.001005"/>
+</kw>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2024-09-27T23:30:26.387329" level="INFO">Keyword Teardown is running</msg>
+<arg>Keyword Teardown is running</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:26.387329" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:26.386324" elapsed="0.001005"/>
+</kw>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2024-09-27T23:30:26.388337" level="INFO">Test Case Teardown is running</msg>
+<arg>Test Case Teardown is running</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:26.387329" elapsed="0.001008"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:26.385041" elapsed="0.003296"/>
+</test>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2024-09-27T23:30:26.389353" level="INFO">Suite Teardown is running</msg>
+<arg>Suite Teardown is running</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:26.389353" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:26.214734" elapsed="0.174619"/>
+</suite>
+<status status="PASS" start="2024-09-27T23:30:26.202456" elapsed="0.187896"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assingment">Assingment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assignment19">Assingment.Assignment19</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

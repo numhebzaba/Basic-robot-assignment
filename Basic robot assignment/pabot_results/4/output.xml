@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-09-27T23:30:22.298832" rpa="false" schemaversion="5">
+<suite id="s1" name="Assingment" source="C:\Users\numpt\Desktop\robot\Assingment">
+<suite id="s1-s1" name="Assignment05" source="C:\Users\numpt\Desktop\robot\Assingment\Assignment05.robot">
+<test id="s1-s1-t1" name="TC-001 Print All Items From Input" line="11">
+<kw name="Print All Items">
+<for flavor="IN">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:22.341642" level="INFO">apple</msg>
+<arg>${item}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:22.341642" elapsed="0.000000"/>
+</kw>
+<var name="${item}">apple</var>
+<status status="PASS" start="2024-09-27T23:30:22.340614" elapsed="0.001028"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:22.341642" level="INFO">banana</msg>
+<arg>${item}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:22.341642" elapsed="0.000000"/>
+</kw>
+<var name="${item}">banana</var>
+<status status="PASS" start="2024-09-27T23:30:22.341642" elapsed="0.001009"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:22.342651" level="INFO">cherry</msg>
+<arg>${item}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:22.342651" elapsed="0.000000"/>
+</kw>
+<var name="${item}">cherry</var>
+<status status="PASS" start="2024-09-27T23:30:22.342651" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:22.342651" level="INFO">mango</msg>
+<arg>${item}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:22.342651" elapsed="0.000000"/>
+</kw>
+<var name="${item}">mango</var>
+<status status="PASS" start="2024-09-27T23:30:22.342651" elapsed="0.000000"/>
+</iter>
+<var>${item}</var>
+<value>@{items}</value>
+<status status="PASS" start="2024-09-27T23:30:22.340614" elapsed="0.002037"/>
+</for>
+<arg>apple</arg>
+<arg>banana</arg>
+<arg>cherry</arg>
+<arg>mango</arg>
+<status status="PASS" start="2024-09-27T23:30:22.339347" elapsed="0.003304"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:22.339347" elapsed="0.004316"/>
+</test>
+<status status="PASS" start="2024-09-27T23:30:22.335973" elapsed="0.007690"/>
+</suite>
+<status status="PASS" start="2024-09-27T23:30:22.321657" elapsed="0.023034"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assingment">Assingment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assignment05">Assingment.Assignment05</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

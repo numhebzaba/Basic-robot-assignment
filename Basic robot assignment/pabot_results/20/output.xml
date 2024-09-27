@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-09-27T23:30:27.200812" rpa="false" schemaversion="5">
+<suite id="s1" name="Assingment" source="C:\Users\numpt\Desktop\robot\Assingment">
+<suite id="s1-s1" name="Assignment21" source="C:\Users\numpt\Desktop\robot\Assingment\Assignment21.robot">
+<test id="s1-s1-t1" name="TC-001 Test With Tag 1" line="5">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:27.442638" level="INFO">This is a smoke test</msg>
+<arg>This is a smoke test</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:27.442638" elapsed="0.000000"/>
+</kw>
+<tag>smoke</tag>
+<status status="PASS" start="2024-09-27T23:30:27.440631" elapsed="0.002007"/>
+</test>
+<test id="s1-s1-t2" name="TC-002 Test With Tag 2" line="8">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:27.444640" level="INFO">This is a regression test</msg>
+<arg>This is a regression test</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:27.444640" elapsed="0.000000"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" start="2024-09-27T23:30:27.443641" elapsed="0.000999"/>
+</test>
+<test id="s1-s1-t3" name="TC-003 Test With Multiple Tags" line="11">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T23:30:27.445660" level="INFO">This is a smoke and critical test</msg>
+<arg>This is a smoke and critical test</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T23:30:27.445660" elapsed="0.000000"/>
+</kw>
+<tag>critical</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2024-09-27T23:30:27.445660" elapsed="0.000000"/>
+</test>
+<status status="PASS" start="2024-09-27T23:30:27.241810" elapsed="0.204853"/>
+</suite>
+<status status="PASS" start="2024-09-27T23:30:27.228328" elapsed="0.218335"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">critical</stat>
+<stat pass="1" fail="0" skip="0">regression</stat>
+<stat pass="2" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Assingment">Assingment</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="Assignment21">Assingment.Assignment21</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

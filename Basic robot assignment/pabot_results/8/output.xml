@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-09-27T23:30:23.007410" rpa="false" schemaversion="5">
+<suite id="s1" name="Assingment" source="C:\Users\numpt\Desktop\robot\Assingment">
+<suite id="s1-s1" name="Assignment09" source="C:\Users\numpt\Desktop\robot\Assingment\Assignment09.robot">
+<test id="s1-s1-t1" name="TC-001 Power with 2" line="10">
+<kw name="Calculate Square">
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-09-27T23:30:23.215062" level="INFO">${number} = 4</msg>
+<var>${number}</var>
+<arg>${number}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-09-27T23:30:23.214063" elapsed="0.000999"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-27T23:30:23.215062" level="INFO">${result} = 16</msg>
+<var>${result}</var>
+<arg>${${number} * ${number}}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-27T23:30:23.215062" elapsed="0.000000"/>
+</kw>
+<kw name="Return From Keyword" owner="BuiltIn">
+<msg time="2024-09-27T23:30:23.216062" level="INFO">Returning from the enclosing user keyword.</msg>
+<arg>${result}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<status status="PASS" start="2024-09-27T23:30:23.216062" elapsed="0.000000"/>
+</kw>
+<msg time="2024-09-27T23:30:23.216062" level="INFO">${square} = 16</msg>
+<var>${square}</var>
+<arg>4</arg>
+<status status="PASS" start="2024-09-27T23:30:23.213021" elapsed="0.003041"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-09-27T23:30:23.216062" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${square}</arg>
+<arg>16</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-09-27T23:30:23.216062" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T23:30:23.213021" elapsed="0.003041"/>
+</test>
+<status status="PASS" start="2024-09-27T23:30:23.042040" elapsed="0.175022"/>
+</suite>
+<status status="PASS" start="2024-09-27T23:30:23.029776" elapsed="0.188286"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assingment">Assingment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assignment09">Assingment.Assignment09</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
