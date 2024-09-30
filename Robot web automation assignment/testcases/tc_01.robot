@@ -1,11 +1,12 @@
 *** Settings ***
 Resource    ../keywords/import.robot
+Test Teardown    Close Browser
+
 *** Test Cases ***
 TC-001 Register
     common.Open training platform doppio website
     main_page.Click user icon 
     login_page.Click sign up button for register
-    Click sign up button
 
     register_page.Input username on register page    ${testdata.username}
     register_page.Input password on register page    ${testdata.password}
@@ -14,43 +15,38 @@ TC-001 Register
     register_page.Click OK pop up after register successfully
 
 
-    Sleep    2s
-TC-002 Login
+    Sleep    1s
+TC-002 login then order phone with credit card and check the order that was created
     common.Open training platform doppio website
     main_page.Click user icon
 
-    login_page.Input username on login page    ${testdata.username}
-    login_page.Input password on login page    ${testdata.password}
-    login_page.Click Login button
-    login_page.Click OK pop up after login successfully
+    login_feature.Log in    username=${testdata.username}    password=${testdata.password}
 
     main_page.In put keyword into search bar    ${testdata.keyword}
     main_page.Click search icon
     main_page.Click phone
 
     product_page.Click add to cart button
+    Sleep    0.25s
     product_page.Click OK pop up after add product successfully
     product_page.Click cart icon
+    
+    Sleep    0.25s
+    delivery_info_feature.Input user info on delivery info page    name=${testdata.name}    
+    ...    surname=${testdata.surname}    
+    ...    shipping_address=${testdata.shipping_address}    
+    ...    phone_number=${testdata.phone_number}    
 
-    delivery_info_page.Input name on delivery info page    ${testdata.name}
-    delivery_info_page.Input surname on delivery info page    ${testdata.surname}
-    delivery_info_page.Input shipping address on delivery info page    ${testdata.shipping_address}
-    delivery_info_page.Input phone number on delivery info page    ${testdata.phone_number}
-    delivery_info_page.Click pay button
+    payment_feature.Input user's credit card info on payment page    credit_card_number=${testdata.credit_card_number}    
+    ...    credit_card_exp=${testdata.credit_card_exp}    
+    ...    credit_card_cv=${testdata.credit_card_cv}    
+    ...    credit_card_owner=${testdata.credit_card_owner}
 
-    payment_page.Click pay button
-    payment_page.Input credit card number on payment page    ${testdata.credit_card_number}
-    payment_page.Input expiration date on payment page    ${testdata.credit_card_exp}
-    payment_page.Input cv code on payment page    ${testdata.credit_card_cv}
-    payment_page.Input card owner on payment page    ${testdata.credit_card_owner}
-    payment_page.Click confirm payment button
-    payment_page.Click OK pop up after payment successfully
-    payment_page.Click continue shopping
 
     main_page.Click user icon
     account_page.Click preparing to see order should be created
     account_page.Check order status
-    Sleep    2s
+    Sleep    1s
 
     
 

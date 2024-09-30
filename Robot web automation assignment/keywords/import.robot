@@ -27,3 +27,13 @@ Resource    ../keywords/locators/payment_locator.robot
 Resource    ../keywords/pages/account_page.robot
 Resource    ../keywords/locators/account_locator.robot
 
+Resource    ../keywords/features/login_feature.robot
+
+Resource    ../keywords/features/delivery_info_feature.robot
+
+Resource    ../keywords/features/payment_feature.robot
+
+
+
+
+
