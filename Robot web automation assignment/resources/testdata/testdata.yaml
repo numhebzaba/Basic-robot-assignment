@@ -1,0 +1,13 @@
+testdata:
+ username : nnn@gmail.com
+ password : Nn.123456789
+ confirm_password : Nn.123456789
+ keyword : phone
+ name : Puttipong
+ surname : Pamaithong
+ shipping_address : 31/29 Samut sakhon
+ phone_number : 0982699224
+ credit_card_number : 4111111111111111
+ credit_card_exp : 01/2025
+ credit_card_cv : 111
+ credit_card_owner : Puttipong
