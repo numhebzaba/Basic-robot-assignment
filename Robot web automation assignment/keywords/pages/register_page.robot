@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../import.robot
+Resource    ${CURDIR}/../import.robot
 
 *** Keywords ***
 Input username on register page

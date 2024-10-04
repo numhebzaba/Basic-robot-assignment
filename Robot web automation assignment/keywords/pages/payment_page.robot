@@ -1,8 +1,8 @@
 *** Settings ***
-Resource    ../import.robot
+Resource    ${CURDIR}/../import.robot
 
 *** Keywords ***
-Click pay button
+Click next button then page should show Payment Details
     Wait Until Element Is Visible    ${payment_locator.next_btn}
     Click Element    ${payment_locator.next_btn}
 Input credit card number on payment page
@@ -28,6 +28,6 @@ Click OK pop up after payment successfully
     Wait Until Element Is Visible    ${login_locator.OK_pop_up}
     Click Element    ${login_locator.OK_pop_up}   
     Wait Until Element Is Not Visible    ${login_locator.OK_pop_up}
-Click continue shopping
+Click continue shopping then should return to main page
     Wait Until Element Is Visible    ${payment_locator.continue_shopping}
     Click Element    ${payment_locator.continue_shopping}

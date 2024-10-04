@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../import.robot
+Resource    ${CURDIR}/../import.robot
 *** Keywords ***
 Input user info on delivery info page
     [Arguments]    &{user_info}
@@ -8,7 +8,7 @@ Input user info on delivery info page
     delivery_info_page.Input surname on delivery info page    ${user_info["surname"]}
     delivery_info_page.Input shipping address on delivery info page    ${user_info["shipping_address"]}
     delivery_info_page.Input phone number on delivery info page    ${user_info["phone_number"]}    
-    delivery_info_page.Click pay button
+    delivery_info_page.Click pay button then page should show Select Payment Method
 
     
     
