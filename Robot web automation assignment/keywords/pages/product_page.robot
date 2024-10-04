@@ -1,5 +1,6 @@
 *** Settings ***
-Resource    ${CURDIR}/../import.robot
+Resource    ../import.robot
+Library    Process
 
 *** Keywords ***
 Click add to cart button
@@ -13,7 +14,7 @@ Click OK pop up after add product successfully
     ${IsElementVisible}=  Run Keyword And Return Status    Element Should Be Visible   ${product_locator.OK_pop_up}
     Run Keyword If    ${IsElementVisible}  Click Element    ${product_locator.OK_pop_up}  
     
-Click cart icon then should show delivery info page
+Click cart icon
     Wait Until Element Is Visible    ${product_locator.cart_icon}
-    Click Element    ${product_locator.cart_icon}
+    Click Element    ${product_locator.cart_icon}   
     

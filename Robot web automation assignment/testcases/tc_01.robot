@@ -6,7 +6,7 @@ Test Teardown    Close Browser
 TC-001 Register
     common.Open training platform doppio website
     main_page.Click user icon 
-    login_page.Click sign up button and should show register page
+    login_page.Click sign up button for register
 
     register_page.Input username on register page    ${testdata.username}
     register_page.Input password on register page    ${testdata.password}
@@ -14,20 +14,24 @@ TC-001 Register
     register_page.Click sign up button
     register_page.Click OK pop up after register successfully
 
-TC-002 Log in then order phone with credit card and check the order that was created
+
+    Sleep    1s
+TC-002 login then order phone with credit card and check the order that was created
     common.Open training platform doppio website
     main_page.Click user icon
 
-    login_feature.Log in and icon user should turn into green    username=${testdata.username}    password=${testdata.password}
+    login_feature.Log in    username=${testdata.username}    password=${testdata.password}
 
     main_page.In put keyword into search bar    ${testdata.keyword}
-    main_page.Click search icon then page should show search result
-    main_page.Click phone product then should show product page
+    main_page.Click search icon
+    main_page.Click phone
 
     product_page.Click add to cart button
+    Sleep    0.25s
     product_page.Click OK pop up after add product successfully
-    product_page.Click cart icon then should show delivery info page
+    product_page.Click cart icon
     
+    Sleep    0.25s
     delivery_info_feature.Input user info on delivery info page    name=${testdata.name}    
     ...    surname=${testdata.surname}    
     ...    shipping_address=${testdata.shipping_address}    
@@ -38,10 +42,11 @@ TC-002 Log in then order phone with credit card and check the order that was cre
     ...    credit_card_cv=${testdata.credit_card_cv}    
     ...    credit_card_owner=${testdata.credit_card_owner}
 
+
     main_page.Click user icon
     account_page.Click preparing to see order should be created
-    account_page.Check order status that should be Preparing
-
+    account_page.Check order status
+    Sleep    1s
 
     
 

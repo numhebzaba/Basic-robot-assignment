@@ -1,8 +1,8 @@
 *** Settings ***
-Resource    ${CURDIR}/../import.robot
+Resource    ../import.robot
 
 *** Keywords ***
-Click sign up button and should show register page
+Click sign up button for register
     Wait Until Element Is Visible    ${login_locator.sign_up_btn}
     Click Element    ${login_locator.sign_up_btn}
 Input username on login page
