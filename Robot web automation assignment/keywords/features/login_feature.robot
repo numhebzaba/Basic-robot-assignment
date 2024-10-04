@@ -1,7 +1,7 @@
 *** Settings ***
-Resource    ${CURDIR}/../import.robot
+Resource    ../import.robot
 *** Keywords ***
-Log in and icon user should turn into green
+Log in
     [Arguments]    &{user_info}
     
     login_page.Input username on login page    ${user_info["username"]}
