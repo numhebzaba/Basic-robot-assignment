@@ -11,10 +11,10 @@ Open My demo Application
         ...    appPackage=${appPackage} 
         ...    appActivity=${appActivity}
     ELSE IF    "${platform}"=="ios"
-        Open Application    automationName==${automationName}
-        ...    platformName==${platformName}
-        ...    platformVersion==${platformVersion}
-        ...    bundleId==${bundleId}
-        ...    deviceName==${deviceName}
-        
+        Open Application    remote_url=${remote_url}
+        ...    automationName=${automationName}
+        ...    platformName=${platformName}
+        ...    platformVersion=${platformVersion}
+        ...    bundleId=${bundleId}
+        ...    deviceName=${deviceName}
     END

@@ -1,3 +1,4 @@
+remote_url      : http://127.0.0.1:4723/wd/hub
 automationName  : XCUItest
 platformName    : ios
 platformVersion : "18.0"
