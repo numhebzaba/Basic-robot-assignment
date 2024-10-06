@@ -1,0 +1,8 @@
+remote_url        : http://localhost:4723/wd/hub
+deviceName        : ascend_pixel_4
+platformVersion   : "12.0"
+platformName      : Android
+appPackage        : com.saucelabs.mydemoapp.android
+appActivity       : com.saucelabs.mydemoapp.android.view.activities.SplashActivity
+
+

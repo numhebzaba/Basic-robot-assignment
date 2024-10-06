@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on darwin)" generated="2024-10-06T19:16:01.173783" rpa="false" schemaversion="5">
+<suite id="s1" name="TC 01" source="/Users/puttipong.p/Basic-robot-assignment/Robot mobile automation assignment/testcases/TC_01.robot">
+<test id="s1-t1" name="Tc-001 Verify text that in cart has only one product" line="4">
+<kw name="Open My demo Application" owner="common">
+<if>
+<branch type="IF" condition="&quot;${platform}&quot;==&quot;android&quot;">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>remote_url=${remote_url}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>platformVersion=${platformVersion}</arg>
+<arg>platformName=${platformName}</arg>
+<arg>appPackage=${appPackage}</arg>
+<arg>appActivity=${appActivity}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-10-06T19:16:01.263372" elapsed="5.622717"/>
+</kw>
+<status status="PASS" start="2024-10-06T19:16:01.263065" elapsed="5.623108"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${platform}&quot;==&quot;ios&quot;">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>automationName==${automationName}</arg>
+<arg>platformName==${platformName}</arg>
+<arg>platformVersion==${platformVersion}</arg>
+<arg>bundleId==${bundleId}</arg>
+<arg>deviceName==${deviceName}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="NOT RUN" start="2024-10-06T19:16:06.886349" elapsed="0.000012"/>
+</kw>
+<status status="NOT RUN" start="2024-10-06T19:16:06.886204" elapsed="0.000180"/>
+</branch>
+<status status="PASS" start="2024-10-06T19:16:01.263053" elapsed="5.623342"/>
+</if>
+<status status="PASS" start="2024-10-06T19:16:01.262951" elapsed="5.623487"/>
+</kw>
+<kw name="Click product name sauce laps bacpack" owner="main_shopping_page">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-10-06T19:16:07.949430" level="INFO">xpath criteria: (//android.widget.ImageView[@content-desc="Product Image"])[1]</msg>
+<arg>${main_shopping_locator.produt_1}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-10-06T19:16:06.886739" elapsed="1.062735"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-10-06T19:16:07.950160" level="INFO">Clicking element 'xpath=(//android.widget.ImageView[@content-desc="Product Image"])[1]'.</msg>
+<msg time="2024-10-06T19:16:08.694609" level="INFO">xpath criteria: (//android.widget.ImageView[@content-desc="Product Image"])[1]</msg>
+<arg>${main_shopping_locator.produt_1}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-10-06T19:16:07.949576" elapsed="0.745080"/>
+</kw>
+<status status="PASS" start="2024-10-06T19:16:06.886595" elapsed="1.808111"/>
+</kw>
+<kw name="Click add to cart button" owner="product_page">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-10-06T19:16:08.728864" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/cartBt</msg>
+<arg>${product_locator.add_to_cart_btn}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-10-06T19:16:08.694981" elapsed="0.033930"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-10-06T19:16:08.729586" level="INFO">Clicking element 'id=com.saucelabs.mydemoapp.android:id/cartBt'.</msg>
+<msg time="2024-10-06T19:16:08.783207" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/cartBt</msg>
+<arg>${product_locator.add_to_cart_btn}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-10-06T19:16:08.729011" elapsed="0.054310"/>
+</kw>
+<status status="PASS" start="2024-10-06T19:16:08.694848" elapsed="0.088541"/>
+</kw>
+<kw name="Click cart icon then page should cart page" owner="topbar_page">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-10-06T19:16:09.405850" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/cartIV</msg>
+<arg>${topbar_locator.cart_icon}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-10-06T19:16:08.783908" elapsed="0.621990"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-10-06T19:16:09.406583" level="INFO">Clicking element 'id=com.saucelabs.mydemoapp.android:id/cartIV'.</msg>
+<msg time="2024-10-06T19:16:10.094034" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/cartIV</msg>
+<arg>${topbar_locator.cart_icon}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-10-06T19:16:09.405992" elapsed="0.688085"/>
+</kw>
+<status status="PASS" start="2024-10-06T19:16:08.783757" elapsed="1.310368"/>
+</kw>
+<kw name="Check total item text" owner="my_cart_page">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-10-06T19:16:10.135696" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/itemsTV</msg>
+<arg>${my_cart_locator.total_items}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-10-06T19:16:10.094609" elapsed="0.041126"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-10-06T19:16:10.170670" level="INFO">Element 'id=com.saucelabs.mydemoapp.android:id/itemsTV' text is '1 Items' </msg>
+<msg time="2024-10-06T19:16:10.170711" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/itemsTV</msg>
+<msg time="2024-10-06T19:16:10.170753" level="INFO">${text} = 1 Items</msg>
+<var>${text}</var>
+<arg>${my_cart_locator.total_items}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-10-06T19:16:10.135829" elapsed="0.034934"/>
+</kw>
+<kw name="Element Text Should Be" owner="AppiumLibrary">
+<msg time="2024-10-06T19:16:10.171602" level="INFO">Verifying element 'id=com.saucelabs.mydemoapp.android:id/itemsTV' contains exactly text '1 Items'.</msg>
+<msg time="2024-10-06T19:16:10.213225" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/itemsTV</msg>
+<arg>${my_cart_locator.total_items}</arg>
+<arg>${total_items}</arg>
+<doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
+<status status="PASS" start="2024-10-06T19:16:10.170854" elapsed="0.042413"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-06T19:16:10.213488" level="INFO">1 Items</msg>
+<arg>${text}</arg>
+<arg>console=true</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-06T19:16:10.213362" elapsed="0.000165"/>
+</kw>
+<arg>${testdata.verify_text}</arg>
+<status status="PASS" start="2024-10-06T19:16:10.094258" elapsed="0.119300"/>
+</kw>
+<status status="PASS" start="2024-10-06T19:16:01.262623" elapsed="8.951011"/>
+</test>
+<status status="PASS" start="2024-10-06T19:16:01.174451" elapsed="9.039421"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC 01">TC 01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
