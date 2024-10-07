@@ -7,6 +7,6 @@
 
 *** Test Cases ***
 TC-001 Print Fruits From Input List
-    Print Fruits    apple    banana    cherry.
+    Print Fruits    apple    banana    cherry
     
 

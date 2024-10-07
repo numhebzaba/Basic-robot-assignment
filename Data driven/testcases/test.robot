@@ -1,12 +1,11 @@
-*** Setting ***
+*** Settings ***
 Resource    ${CURDIR}/../keywords/import.robot
 Test Template    Test Login with data driven
 *** Test Cases ***
 Test Data Driver
-*** Keyword ***
+*** Keywords ***
 Test Login with data driven
     [Arguments]    ${username}    ${password}    ${expect_message}
-    # Open training platform doppio website
     common.Open training platform doppio website
     main_page.Click user icon
     login_page.Input username on login page    ${username}

@@ -12,7 +12,6 @@ TC-001 Register
     register_page.Input confirm password on register page    ${testdata.confirm_password}
     register_page.Click sign up button
     register_page.Click OK pop up after register successfully
-
 TC-002 login then order phone with credit card and check the order that was created
     common.Open training platform doppio website
     main_page.Click user icon
@@ -22,11 +21,9 @@ TC-002 login then order phone with credit card and check the order that was crea
     main_page.Click phone product then should show product page
 
     product_page.Click add to cart button
-    Sleep    0.25s
     product_page.Click OK pop up after add product successfully
     product_page.Click cart icon then should show delivery info page
     
-    Sleep    0.25s
     delivery_info_feature.Input user info on delivery info page    name=${testdata.name}    
     ...    surname=${testdata.surname}    
     ...    shipping_address=${testdata.shipping_address}    
@@ -37,11 +34,10 @@ TC-002 login then order phone with credit card and check the order that was crea
     ...    credit_card_cv=${testdata.credit_card_cv}    
     ...    credit_card_owner=${testdata.credit_card_owner}
 
-
     main_page.Click user icon
     account_page.Click preparing to see order should be created
     account_page.Check order status that should be Preparing
-    Sleep    1s
+
 
     
 

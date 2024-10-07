@@ -2,9 +2,10 @@
 Resource    ${CURDIR}/../import.robot
 *** Keywords ***
 Click preparing to see order should be created
-    Wait Until Element Is Visible    ${account_locator.preparing_order}
-    Click Element    ${account_locator.preparing_order}
+    SeleniumLibrary.Wait Until Element Is Visible    ${account_locator.preparing_order}
+    SeleniumLibrary.Click Element    ${account_locator.preparing_order}
 Check order status that should be Preparing
-    ${status}    Get Text    ${account_locator.order_status}
+    ${status}    SeleniumLibrary.Get Text    ${account_locator.order_status}
     Log    ${status}    console=True
-    Should Be Equal As Strings    ${status}     Preparing
+    BuiltIn.Should Be Equal As Strings    ${status}     Preparing
+    

@@ -3,7 +3,6 @@ Print All Items
     [Arguments]    @{items}
     FOR    ${item}    IN    @{items}
         Log    ${item}    
-        
     END
 
 
