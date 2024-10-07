@@ -8,7 +8,7 @@ Input user info on delivery info page
     delivery_info_page.Input surname on delivery info page    ${user_info["surname"]}
     delivery_info_page.Input shipping address on delivery info page    ${user_info["shipping_address"]}
     delivery_info_page.Input phone number on delivery info page    ${user_info["phone_number"]}    
-    delivery_info_page.Click pay button then page should show Select Payment Method
+    delivery_info_page.Click pay button then page should show select payment method
 
     
     
