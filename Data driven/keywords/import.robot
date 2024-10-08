@@ -1,10 +1,10 @@
 *** Settings ***
 Library    SeleniumLibrary
-Library    DataDriver    file=resources/data_driven/data.csv   dialect=excel
+Library    DataDriver    file=${CURDIR}/../resources/data_driven/data.csv   dialect=excel
 
+Variables    ${CURDIR}/../resources/translation/${lang}.yaml
+Variables    ${CURDIR}/../resources/setting/setting.yaml  
 
-Variables    ${CURDIR}/../resources/setting/setting.yaml
-Resource    ${CURDIR}/../resources/data_driven/data.csv
 
 Resource    ${CURDIR}/common.robot
 
