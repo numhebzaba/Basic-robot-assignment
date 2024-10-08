@@ -18,6 +18,6 @@ Click sign up button
     SeleniumLibrary.Wait until element is visible    ${register_locator.sign_up_btn}
     SeleniumLibrary.Click element    ${register_locator.sign_up_btn}   
 Click ok pop up after register successfully
-    SeleniumLibrary.Wait until element is visible    ${register_locator.OK_pop_up}
-    SeleniumLibrary.Click element    ${register_locator.OK_pop_up}   
-    SeleniumLibrary.Wait until element is not visible    ${register_locator.OK_pop_up}
+    SeleniumLibrary.Wait until element is visible    ${register_locator.ok_pop_up}
+    SeleniumLibrary.Click element    ${register_locator.ok_pop_up}   
+    SeleniumLibrary.Wait until element is not visible    ${register_locator.ok_pop_up}

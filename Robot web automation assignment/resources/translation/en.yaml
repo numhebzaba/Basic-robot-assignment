@@ -1,3 +1,42 @@
 account_translation:
-  txt_preparing_order:  Preparing
-  txt_order_status:     Preparing
+  txt_preparing_order       : Preparing
+  txt_order_status          : Preparing
+delivery_info_translation:
+  placeholder_name          : Name
+  placeholder_surname       : Surname
+  placeholder_shipping_address  : Shipping address
+  placeholder_phone_number  : Phone number
+  placeholder_email         : Email
+  txt_pay_btn               : PAY
+login_translation:
+  txt_sign_up_btn           : Sign up
+  txt_username              : Username
+  txt_password              : Password
+  txt_login_btn             : Login
+  txt_ok_pop_up             : OK
+main_translation:
+  att_user_icon             : user
+  att_ancestor_user_icon    : menu
+  placeholder_searchbar     : input search text
+  att_search_icon           : search
+  txt_phone                 : Doppee phone
+  txt_preparing_order       : Preparing
+payment_translation:
+  txt_next_btn                    : Next
+  placeholder_credit_card_number  : Valid Card Number
+  placeholder_credit_card_exp     : MM/YYYY
+  placeholder_credit_card_cv      : CVC
+  placeholder_credit_card_owner   : Card Owner Name
+  txt_confirm_payment_btn         : Confirm Payment
+  txt_ok_pop_up                   : OK  
+  txt_continue_shopping           : Continue Shopping
+product_translation:
+  txt_add_to_cart_button          : Add to cart
+  txt_ok_pop_up                   : OK
+  att_ancestor_cart_icon          : menu
+register_translation:
+  txt_sign_up_btn                 : SIGNUP
+  txt_ok_pop_up                   : OK
+
+
+

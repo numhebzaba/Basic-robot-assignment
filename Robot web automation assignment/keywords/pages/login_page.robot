@@ -16,6 +16,6 @@ Click login button
     SeleniumLibrary.Wait until element is visible    ${login_locator.login_btn}
     SeleniumLibrary.Click element    ${login_locator.login_btn}
 Click ok pop up after login successfully
-    SeleniumLibrary.Wait until element is visible    ${login_locator.OK_pop_up}
-    SeleniumLibrary.Click element    ${login_locator.OK_pop_up}   
-    SeleniumLibrary.Wait until element is not visible    ${login_locator.OK_pop_up}
+    SeleniumLibrary.Wait until element is visible    ${login_locator.ok_pop_up}
+    SeleniumLibrary.Click element    ${login_locator.ok_pop_up}   
+    SeleniumLibrary.Wait until element is not visible    ${login_locator.ok_pop_up}

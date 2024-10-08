@@ -3,7 +3,7 @@ Library    SeleniumLibrary
 
 Variables    ${CURDIR}/../resources/testdata/testdata.yaml
 Variables    ${CURDIR}/../resources/setting/${env}/setting.yaml
-Variables    ${CURDIR}/../resources/translation/en.yaml
+Variables    ${CURDIR}/../resources/translation/${lang}.yaml
 
 Resource    ${CURDIR}/common.robot
 

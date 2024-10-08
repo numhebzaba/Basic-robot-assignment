@@ -24,9 +24,9 @@ Click confirm payment button
     SeleniumLibrary.Wait until element is visible    ${payment_locator.confirm_payment_btn}
     SeleniumLibrary.Click element    ${payment_locator.confirm_payment_btn}
 Click ok pop up after payment successfully
-    SeleniumLibrary.Wait until element is visible    ${login_locator.OK_pop_up}
-    SeleniumLibrary.Click element    ${login_locator.OK_pop_up}   
-    SeleniumLibrary.Wait until element is not visible    ${login_locator.OK_pop_up}
+    SeleniumLibrary.Wait until element is visible    ${login_locator.ok_pop_up}
+    SeleniumLibrary.Click element    ${login_locator.ok_pop_up}   
+    SeleniumLibrary.Wait until element is not visible    ${login_locator.ok_pop_up}
 Click continue shopping then should return to main page
     SeleniumLibrary.Wait until element is visible    ${payment_locator.continue_shopping}
     SeleniumLibrary.Click element    ${payment_locator.continue_shopping}
