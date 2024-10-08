@@ -3,6 +3,7 @@ Library    AppiumLibrary
 
 Variables   ${CURDIR}/../resources/setting/${env}/${platform}.yaml
 Variables   ${CURDIR}/../resources/testdata/testdata.yaml
+Variables   ${CURDIR}/../resources/translation/${platform}/${lang}.yaml
 
 Resource    ${CURDIR}/common.robot
 

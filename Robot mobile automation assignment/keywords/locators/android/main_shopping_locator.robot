@@ -1,2 +1,2 @@
 *** Variables ***
-${main_shopping_locator.produt_1}    xpath=(//android.widget.ImageView[@content-desc="Product Image"])[1]
+${main_shopping_locator.product_1}    xpath=(//android.widget.ImageView[@content-desc="${main_translation.content_desc_product}"])[1]

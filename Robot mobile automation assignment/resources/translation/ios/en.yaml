@@ -1,0 +1,5 @@
+main_translation:
+  name_product             : ProductItem
+my_cart_translation:
+  name_total              : Total
+  name_items              : Items
