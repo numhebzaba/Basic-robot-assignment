@@ -2,7 +2,7 @@
 Resource    ${CURDIR}/../keywords/import.robot
 Test Template    Test Login with data driven
 *** Test Cases ***
-Test Data Driver
+Test login with data driver
 *** Keywords ***
 Test Login with data driven
     [Arguments]    ${username}    ${password}    ${expect_message}
