@@ -13,8 +13,9 @@ Input password on login page
     SeleniumLibrary.Wait until element is visible    ${login_locator.password} 
     SeleniumLibrary.Input text    ${login_locator.password}    ${password}
 Click login button
-    SeleniumLibrary.Wait until element is visible    ${login_locator.login_btn}
-    SeleniumLibrary.Click element    ${login_locator.login_btn}
+    common.Click element when ready    ${login_locator.login_btn}
+    # SeleniumLibrary.Wait until element is visible    ${login_locator.login_btn}
+    # SeleniumLibrary.Click element    ${login_locator.login_btn}
 Click ok pop up after login successfully
     SeleniumLibrary.Wait until element is visible    ${login_locator.ok_pop_up}
     SeleniumLibrary.Click element    ${login_locator.ok_pop_up}   
