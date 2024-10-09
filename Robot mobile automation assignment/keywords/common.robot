@@ -20,3 +20,4 @@ Open my demo application
                         ...    deviceName=${deviceName}
     END
     AppiumLibrary.Open application    ${remote_url}    &{capability}
+

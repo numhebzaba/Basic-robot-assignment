@@ -1,66 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.12.6 on darwin)" generated="2024-10-08T11:47:52.528794" rpa="false" schemaversion="5">
-<suite id="s1" name="Basic robot assignment" source="/Users/puttipong.p/Basic-robot-assignment/Basic robot assignment">
-<suite id="s1-s1" name="Assignment20" source="/Users/puttipong.p/Basic-robot-assignment/Basic robot assignment/Assignment20.robot">
-<test id="s1-s1-t1" name="TC-003 Test With Multiple Tags" line="11">
+<robot generator="Robot 7.1 (Python 3.12.6 on darwin)" generated="2024-10-08T16:47:00.208998" rpa="false" schemaversion="5">
+<suite id="s1" name="Assignment22" source="/Users/puttipong.p/Basic-robot-assignment/Basic robot assignment/Assignment22.robot">
+<test id="s1-t1" name="TC-002 Test With Tag 2" line="8">
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-10-08T11:47:52.578649" level="INFO">This is a smoke and critical test</msg>
+<msg time="2024-10-08T16:47:00.266210" level="INFO">This is a regression test</msg>
+<arg>This is a regression test</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-08T16:47:00.266111" elapsed="0.000142"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" start="2024-10-08T16:47:00.265663" elapsed="0.000680"/>
+</test>
+<test id="s1-t2" name="TC-003 Test With Multiple Tags" line="11">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-08T16:47:00.266653" level="INFO">This is a smoke and critical test</msg>
 <arg>This is a smoke and critical test</arg>
 <arg>console=True</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-10-08T11:47:52.578556" elapsed="0.000133"/>
+<status status="PASS" start="2024-10-08T16:47:00.266589" elapsed="0.000091"/>
 </kw>
 <tag>critical</tag>
 <tag>smoke</tag>
-<status status="PASS" start="2024-10-08T11:47:52.578105" elapsed="0.000682"/>
+<status status="PASS" start="2024-10-08T16:47:00.266447" elapsed="0.000303"/>
 </test>
-<status status="PASS" start="2024-10-08T11:47:52.538957" elapsed="0.040061"/>
-</suite>
-<suite id="s1-s2" name="Assignment21" source="/Users/puttipong.p/Basic-robot-assignment/Basic robot assignment/Assignment21.robot">
-<test id="s1-s2-t1" name="TC-003 Test With Multiple Tags" line="11">
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-10-08T11:47:52.580058" level="INFO">This is a smoke and critical test</msg>
-<arg>This is a smoke and critical test</arg>
-<arg>console=True</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-10-08T11:47:52.579992" elapsed="0.000095"/>
-</kw>
-<tag>critical</tag>
-<tag>smoke</tag>
-<status status="PASS" start="2024-10-08T11:47:52.579835" elapsed="0.000321"/>
-</test>
-<status status="PASS" start="2024-10-08T11:47:52.579238" elapsed="0.001038"/>
-</suite>
-<suite id="s1-s3" name="Assignment22" source="/Users/puttipong.p/Basic-robot-assignment/Basic robot assignment/Assignment22.robot">
-<test id="s1-s3-t1" name="TC-003 Test With Multiple Tags" line="11">
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-10-08T11:47:52.581114" level="INFO">This is a smoke and critical test</msg>
-<arg>This is a smoke and critical test</arg>
-<arg>console=True</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-10-08T11:47:52.581062" elapsed="0.000075"/>
-</kw>
-<tag>critical</tag>
-<tag>smoke</tag>
-<status status="PASS" start="2024-10-08T11:47:52.580929" elapsed="0.000265"/>
-</test>
-<status status="PASS" start="2024-10-08T11:47:52.580432" elapsed="0.000860"/>
-</suite>
-<status status="PASS" start="2024-10-08T11:47:52.530050" elapsed="0.051413"/>
+<status status="PASS" start="2024-10-08T16:47:00.209886" elapsed="0.057022"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="3" fail="0" skip="0">critical</stat>
-<stat pass="3" fail="0" skip="0">smoke</stat>
+<stat pass="1" fail="0" skip="0">critical</stat>
+<stat pass="1" fail="0" skip="0">regression</stat>
+<stat pass="1" fail="0" skip="0">smoke</stat>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="Basic robot assignment">Basic robot assignment</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assignment20">Basic robot assignment.Assignment20</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s2" name="Assignment21">Basic robot assignment.Assignment21</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s3" name="Assignment22">Basic robot assignment.Assignment22</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Assignment22">Assignment22</stat>
 </suite>
 </statistics>
 <errors>
